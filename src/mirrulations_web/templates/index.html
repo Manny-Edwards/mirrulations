@@ -6,6 +6,10 @@
 </head>
 	
 <body>
+
+	{% if error %}
+		<p class="error"><strong>Error:</strong>Invalid DocId
+	{% endif %}</p>
 	<div id="center">
 		<div id="Title">
 			File Downloads<br>
@@ -13,7 +17,7 @@
 		<form method="POST">
                       Directory ID: <input type="text" name="DirId"><br>
 					<a href="http://0.0.0.0:5000/">
-                      <input type="submit" value="Submit"><br>
+                      <input type="submit" value="Submit"><br><br>
 					</a>
                   </form>
 	</div>
